@@ -15,6 +15,7 @@ const MailGenerator = new MailGen({
   theme: "default",
   product: {
     name: "JamPod",
+    link: "https://leetcode.com/devro3014/",
     logo: "https://res.cloudinary.com/diwh62559/image/upload/v1703068058/logo-no-background_fm0ig4.png",
   },
 });
