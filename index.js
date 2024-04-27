@@ -25,7 +25,7 @@ const cors = require("cors");
 
 app.use(cors({
     credentials: true,
-    origin: ['https://jampod-three.vercel.app/', 'http://localhost:3000']
+    origin: ["https://jampod-three.vercel.app/"]
 }));
 
 app.use(cookieParser());
