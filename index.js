@@ -13,6 +13,13 @@ const io = require('socket.io')(server, {
     }
 })
 
+const cors = require("cors");
+
+app.use(cors({
+    credentials: true,
+    origin: ["https://jampod-three.vercel.app/"]
+}));
+
 const PORT = process.env.PORT || 5500;
 connectDB();
 
@@ -21,12 +28,12 @@ connectDB();
 
 
 // middleware
-const cors = require("cors");
+// const cors = require("cors");
 
-app.use(cors({
-    credentials: true,
-    origin: ["https://jampod-three.vercel.app/"]
-}));
+// app.use(cors({
+//     credentials: true,
+//     origin: ["https://jampod-three.vercel.app/"]
+// }));
 
 app.use(cookieParser());
 app.use(express.json({ limit: '8mb' }));
